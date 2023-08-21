@@ -98,9 +98,9 @@ function App(){
     document.getElementById('ab').innerHTML=e.target.value
   }
   // 20
-  function check(e){
-    document.getElementById('ba').innerHTML=e.target.value
-  }
+ // function check(e){
+ //   document.getElementById('ba').innerHTML=e.target.value
+  //}
 
   return (
     <>
@@ -170,12 +170,12 @@ function App(){
   </select>
   <h1 id="ab"></h1>
   <br></br>
-  20<input type="checkbox" value="react" onChange={check}>React Js</input>
+  {/* 20<input type="checkbox" value="react" onChange={check}>React Js</input>
   <input type="checkbox" value="mongo" onChange={check}>Mongo Db</input>
   <input type="checkbox" value="ang" onChange={check}>Angular</input>
   <input type="checkbox" value="Node" onChange={check}>Node Js</input>
   <h1 id="ba"></h1>
-    
+     */}
 
     </>
   )
