@@ -65,6 +65,9 @@ var ar=[]
     console.log(ar)
      
 }
+function ijk(){
+  splice()
+}
 
 return(
   <>
@@ -114,6 +117,21 @@ return(
 
     <input type="text" id='d10'></input>
     <button onClick={trwt}>Click here to add</button>
+    <table border='2px'>
+      <thead>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+        <th>Gender</th>
+      </thead>
+      <tfoot>
+        {
+          students.map((a)=>{
+            return <tr><td>{a.firstname}</td><td>{a.lastname}</td><td>{a.age}</td><td>{a.gender}</td><td><button onClick={ijk}>delete</button></td></tr>
+          })
+        }
+      </tfoot>
+    </table>
 
     </>
   )
